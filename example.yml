@@ -1,0 +1,10 @@
+mongo:
+  uri:
+  database:
+  collection_youtube_user:
+log:
+  filename:
+  long_file: true
+  level: debug
+youtube:
+  key:
