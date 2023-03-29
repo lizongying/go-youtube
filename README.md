@@ -6,14 +6,20 @@
 
 [youtube](https://developers.google.com/youtube/v3/quickstart/go)
 
-## Server（api）
+## Usage
 
 ```shell
-make && .releases/youtubeServer -c example.yml
+make
 ```
 
-## Spider
+### Server（api）
 
 ```shell
-make && .releases/youtubeServer -c example.yml
+.releases/youtubeServer -c example.yml
+```
+
+### Spider
+
+```shell
+.releases/youtubeServer -c example.yml
 ```
