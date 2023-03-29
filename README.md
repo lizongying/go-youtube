@@ -2,9 +2,7 @@
 
 通过youtubeApi或youtubeSpider获取youtube数据
 
-## youtube
-
-[youtube](https://developers.google.com/youtube/v3/quickstart/go)
+[youtubeApi](https://developers.google.com/youtube/v3/quickstart/go)
 
 ## Usage
 
@@ -12,7 +10,7 @@
 make
 ```
 
-### Server（api）
+### Api
 
 ```shell
 .releases/youtubeServer -c example.yml
@@ -21,5 +19,5 @@ make
 ### Spider
 
 ```shell
-.releases/youtubeServer -c example.yml
+.releases/youtubeSpider -c example.yml
 ```
