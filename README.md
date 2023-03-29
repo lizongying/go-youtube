@@ -1,6 +1,6 @@
 # go-youtube
 
-通过youtubeApi或youtube爬虫获取youtube数据
+通过youtubeApi或youtubeSpider获取youtube数据
 
 ## youtube
 
