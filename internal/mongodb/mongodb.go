@@ -11,14 +11,14 @@ import (
 )
 
 func NewMongoDb(config *config.Config, logger *logger.Logger) (mongoDb *mongo.Database, err error) {
-	uri := config.Mongo.Uri
+	uri := config.Mongo.Example.Uri
 	if uri == "" {
 		err = errors.New("uri is empty")
 		logger.Error(err)
 		return
 	}
 
-	database := config.Mongo.Database
+	database := config.Mongo.Example.Database
 	if database == "" {
 		err = errors.New("database is empty")
 		logger.Error(err)

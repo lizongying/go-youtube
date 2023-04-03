@@ -1,10 +1,12 @@
 mongo:
-  uri:
-  database:
-  collection_youtube_user:
+  example:
+    uri:
+    database:
 log:
-  filename:
+  filename: youtube.log
   long_file: true
   level: debug
 youtube:
   key:
+proxy:
+  example:

@@ -25,7 +25,7 @@ func init() {
 
 func search(youtube *youtubeSpider.YoutubeSpider) (err error) {
 	for _, v := range []string{
-		"youtube",
+		"makeupvideo", "makeuptutorial", "beautytips", "beauty", "fashion", "fashionstyle", "fashiondiaries", "fashiontrends", "springfashion", "outfits", "ootd", "outfitoftheday",
 	} {
 		_ = youtube.Search(context.Background(), youtubeSpider.MetaSearch{
 			Keyword: v,
@@ -47,6 +47,13 @@ func searchApi(youtube *youtubeSpider.YoutubeSpider) (err error) {
 func userApi(youtube *youtubeSpider.YoutubeSpider) (err error) {
 	err = youtube.UserApi(context.Background(), youtubeSpider.MetaUser{
 		Key: "UCYJhto4Of0p8eKKxmB2un9g",
+	})
+	return
+}
+
+func videos(youtube *youtubeSpider.YoutubeSpider) (err error) {
+	err = youtube.Videos(context.Background(), youtubeSpider.MetaUser{
+		Id: "sierramarie",
 	})
 	return
 }
